@@ -14,6 +14,7 @@ namespace MethodOverloading
         {
          return numOne + numTwo;   
         }
+        
 
         public static string Add(int numOne, int numTwo, bool isCurrency)
 
@@ -39,6 +40,8 @@ namespace MethodOverloading
 
         static void Main(string[] args)
         {
+            Console.WriteLine(Add(numOne:1, numTwo:1));
+            Console.WriteLine(Add(numOne:1.1m, numTwo:1.1m));
             Console.WriteLine(Add(numOne:1, numTwo:1, isCurrency:true));
         }
     }
